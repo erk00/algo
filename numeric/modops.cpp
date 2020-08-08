@@ -26,5 +26,5 @@ int mpow(int a, int b) {
     int c = mpow(a, b / 2);
     return mult(c, c);
   }
-  return mult(c, mpow(a, b - 1));
+  return mult(a, mpow(a, b - 1));
 }
